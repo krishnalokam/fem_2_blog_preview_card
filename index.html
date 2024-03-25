@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+  <!-- Reference site: https://github.com/chkhs/Blog-preview-card -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
@@ -14,20 +16,34 @@
   <style>
     body {
       background-color: hsl(47, 88%, 63%);
+      font-family: Figtree, sans-serif;
     }
+
 
     .card {
       margin: auto;
       width: 384px;
       background: hsl(0, 0%, 100%);
       padding: 30px;
-      text-align: center;
+      border-radius: 10px;
+      /* text-align: center; */
+      box-shadow: 15px 15px 8px black;
     }
 
     .card img {
       border-radius: 20px;
+      /* width: 22rem; */
     }
 
+    .learning {
+      background: hsl(47, 88%, 63%);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .logo {
+      width: 24rem;
+    }
 
     .attribution {
       font-size: 11px;
@@ -37,6 +53,17 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    .profile {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .name {
+      margin: 0 10px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -45,13 +72,13 @@
   <main>
     <div class="card">
       <div>
-        <img src="assets/images/illustration-article.svg" alt="Illustrations article">
+        <img class="logo" src="assets/images/illustration-article.svg" alt="Illustrations article">
 
       </div>
 
       <div>
 
-        <p><span class="learni"> Learning </span></p>
+        <p><span class="learning"> Learning </span></p>
 
         <p>Published 21 Dec 2023</p>
 
@@ -59,8 +86,9 @@
 
         <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </div>
-      <div>
-        <img src="assets/images/image-avatar.webp" alt="avatar">Greg Hooper
+      <div class="profile">
+        <img src="assets/images/image-avatar.webp" alt="avatar" />
+        <span class="name">Greg Hooper</span>
       </div>
     </div>
   </main>
