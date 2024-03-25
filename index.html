@@ -12,9 +12,20 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    main {
+    body {
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    .card {
       margin: auto;
-      width: ;
+      width: 384px;
+      background: hsl(0, 0%, 100%);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .card img {
+      border-radius: 20px;
     }
 
 
@@ -32,17 +43,26 @@
 <body>
 
   <main>
-    <img src="assets/images/illustration-article.svg" alt="Illustrations article">
+    <div class="card">
+      <div>
+        <img src="assets/images/illustration-article.svg" alt="Illustrations article">
 
-    <p> Learning </p>
+      </div>
 
-    <p>Published 21 Dec 2023</p>
+      <div>
 
-    <h1> HTML & CSS foundations </h1>
+        <p><span class="learni"> Learning </span></p>
 
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <p>Published 21 Dec 2023</p>
 
-    <div><img src="assets/images/image-avatar.webp" alt="avatar">Greg Hooper</div>
+        <h1> HTML & CSS foundations </h1>
+
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div>
+        <img src="assets/images/image-avatar.webp" alt="avatar">Greg Hooper
+      </div>
+    </div>
   </main>
 
   <footer class="attribution">
